@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Colorscore</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #f0f4ff, #ffffff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .rainbow-text span {
+      display: inline-block;
+      font-size: 4rem;
+      font-weight: bold;
+      background: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: hue-rotate 10s linear infinite;
+    }
+
+    @keyframes hue-rotate {
+      0% { filter: hue-rotate(0deg); }
+      100% { filter: hue-rotate(360deg); }
+    }
+
+    p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin-top: 0.5rem;
+      color: #333;
+    }
+
+    .button {
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #4f46e5;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #4338ca;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="rainbow-text">
+    <span>C</span><span>o</span><span>l</span><span>o</span><span>r</span><span>s</span><span>c</span><span>o</span><span>r</span><span>e</span>
+  </h1>
+  <p>Welcome to Colorscore – a beautiful way to edit and color your musical scores. Explore a vibrant world of notation where clarity meets creativity.</p>
+  <button class="button" onclick="alert('Let\'s get started!')">Get Started</button>
+</body>
+</html>
